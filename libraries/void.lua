@@ -2839,7 +2839,6 @@ function library:Load(options)
         ZIndex = 4,
         Outline = true,
         Parent = holder,
-        Center = true,
     })
 
     local main = utility.create("Square", {
