@@ -1306,6 +1306,9 @@ end
 
 function library:Close()
     self.open = not self.open
+    if self.open == false then 
+        services.ContextActionService:UnbindAction("disablemousescroll")
+    end
 
     services.InputService.MouseIconEnabled = not self.open and self.mousestate or false
 
