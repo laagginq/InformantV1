@@ -1155,9 +1155,6 @@ do
                         __base = _base_4,
                         __name = "label",
                         __parent = _parent_0
-                        label:setlabel = function(text)
-                          self.label.Text = text
-                        end
                       }, {
                         __index = function(cls, name)
                           local val = rawget(_base_4, name)
