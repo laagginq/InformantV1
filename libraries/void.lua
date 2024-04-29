@@ -2,7 +2,7 @@
 
 local FontsRepo = "https://raw.githubusercontent.com/laagginq/Alysum/main/backend/fonts/"
 local CustomFont
-if string.match(EXECUTOR,"Krampus") then 
+if string.match(identifyexecutor(),"Krampus") then 
    CustomFont = Drawing.new("Font", "Minecraft")
    CustomFont.Data = game:HttpGet(FontsRepo.."arial.ttf")
 else
